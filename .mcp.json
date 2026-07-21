@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "ynab": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@maro-org/ynab-mcp"],
+      "env": {
+        "YNAB_API_TOKEN": "${YNAB_API_TOKEN}",
+        "YNAB_READ_ONLY": "true"
+      }
+    },
+    "notion": {
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp"
+    }
+  }
+}
