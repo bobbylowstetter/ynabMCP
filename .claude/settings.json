@@ -2,9 +2,7 @@
   "enabledMcpjsonServers": ["ynab"],
   "permissions": {
     "allow": [
-      "mcp__ynab__list_budgets",
-      "mcp__ynab__get_accounts",
-      "mcp__ynab__get_budget_summary"
+      "mcp__ynab"
     ]
   }
 }
