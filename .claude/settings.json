@@ -2,7 +2,10 @@
   "enabledMcpjsonServers": ["ynab"],
   "permissions": {
     "allow": [
-      "mcp__ynab"
+      "mcp__ynab",
+      "mcp__Composio__COMPOSIO_SEARCH_TOOLS",
+      "mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL",
+      "mcp__Composio__COMPOSIO_GET_TOOL_SCHEMAS"
     ]
   }
 }
