@@ -1,6 +1,7 @@
 {
   "enabledMcpjsonServers": ["ynab"],
   "permissions": {
+    "defaultMode": "dontAsk",
     "allow": [
       "mcp__ynab",
       "mcp__Composio__COMPOSIO_SEARCH_TOOLS",
