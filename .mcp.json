@@ -9,10 +9,6 @@
         "YNAB_READ_ONLY": "true",
         "NODE_USE_ENV_PROXY": "1"
       }
-    },
-    "notion": {
-      "type": "http",
-      "url": "https://mcp.notion.com/mcp"
     }
   }
 }
