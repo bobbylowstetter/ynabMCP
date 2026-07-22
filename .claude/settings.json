@@ -8,5 +8,18 @@
       "mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL",
       "mcp__Composio__COMPOSIO_GET_TOOL_SCHEMAS"
     ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__ynab__.*|mcp__Composio__COMPOSIO_SEARCH_TOOLS|mcp__Composio__COMPOSIO_MULTI_EXECUTE_TOOL|mcp__Composio__COMPOSIO_GET_TOOL_SCHEMAS",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\":{\"hookEventName\":\"PreToolUse\",\"permissionDecision\":\"allow\",\"permissionDecisionReason\":\"Unattended scheduled YNAB routine - pre-approved via PreToolUse hook\"}}'"
+          }
+        ]
+      }
+    ]
   }
 }
