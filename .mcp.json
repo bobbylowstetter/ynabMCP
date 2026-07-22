@@ -6,7 +6,8 @@
       "args": ["-y", "@maro-org/ynab-mcp"],
       "env": {
         "YNAB_API_TOKEN": "${YNAB_API_TOKEN}",
-        "YNAB_READ_ONLY": "true"
+        "YNAB_READ_ONLY": "true",
+        "NODE_USE_ENV_PROXY": "1"
       }
     },
     "notion": {
